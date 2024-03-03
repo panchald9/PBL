@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilify</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="Stylesheet" href="fix.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script>
+        function login(){
+            window.open("file:///E:/ch/Main%20Page/login/login.html#")
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>Billify.</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li ><a href="#" class="Link">Home</a></li>
+                    <li ><a href="#" class="Link">About</a></li>
+                    <li ><a href="#" class="Link">Products</a></li>
+                    <li ><a href="#" class="Link">Pricing</a></li>
+                    <li ><a href="#" class="Link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginbtn" onclick="login()">Sing In/Log in</button>
+            </div>
+            <div class="nav-menu-button">
+                <i class="bx bx-menu" onclick="myMenuFunction()">
+                </i>
+            </div>
+        </nav>
+    </div>
+    <script>
+   
+        function myMenuFunction() {
+         var i = document.getElementById("navMenu");
+     
+         if(i.className === "nav-menu") {
+             i.className += " responsive";
+         } else {
+             i.className = "nav-menu";
+         }
+        }
+      
+     </script>
+
+    <!-----------------------footer----------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Biling problum</a></li>
+                        <li><a href="#">IT returns</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Onlie Shop</h4>
+                    <ul>
+                        <li><a href="#">Biling types</a></li>
+                        <li><a href="#">It returns</a></li>
+                        <li><a href="#">Printing Copyes</a></li>
+                        <li><a href="#">Bill book</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

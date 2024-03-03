@@ -1,0 +1,218 @@
+/* using color propatis
+    1)  rgba(238,242,255,255)
+    2)  rgba(79,70,229,255)
+    3)  rgba(255,255,255,255)
+    */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+body{
+   /* background: url("renault-r5-turbo-3e-electric-cars-purple-background-concept-3840x2160-8796.jpg"); */
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    background-color: rgba(238,242,255,255);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    /*background: rgba(39, 39, 39, 0.404);*/
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    line-height: 100px;
+    /*background: linear-gradient(rgba(148, 21, 21, 0.6), transparent);*/
+    z-index: 100px;
+    background-color:rgba(238,242,255,255);
+}
+.nav-logo{
+    color: rgb(73, 174, 102);
+    font-size: 50px;
+    font-weight: 600;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none   ;
+}
+.nav-menu ul li .Link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+    padding-bottom: 15px;
+    margin: 0 25px  ;
+}
+.Link:hover, .act{
+    border-bottom: 2px solid rgba(29,78,216,255);
+}
+/*10:04 https://www.youtube.com/watch?v=zi3tKRp0fIY */
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+   /* background-color: rgba(255,255,255,0.4);*/
+    border: none;
+    border-radius: 30px;
+    transition: .3 ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgba(29,78,216,255);
+    color: #fff;
+}
+#registerbtn{
+    margin-left: 15px; 
+    background: none;
+}
+#registerbtn:hover{
+    background: rgba(29,78,216,255);
+}
+.btn.white-btn{
+    background: none;
+    width: 150px;
+    font-size: medium;
+}
+.btn.btn.white-btn:hover{
+    background:rgba(29,78,216,255);
+    color: #fff;
+}
+.nav-menu-button{
+    display: none;
+}
+@media only screen and (max-width: 786px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-button{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
+/*  footer*/
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: rgba(255,255,255,25);
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: rgba(79,70,229,255);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #2e7fa2;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: rgba(238,242,255,255);
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(139, 37, 37, 0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
